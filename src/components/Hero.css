@@ -1,0 +1,63 @@
+/* Base styles for the hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/originals/3a/15/b6/3a15b6e707aba4d762a3b3d5bf17f3c3.gif'); /* Add your desired background image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh; /* Adjust based on your preference */
+    padding: 2rem;
+    color: #fff;
+    position: relative; /* Used to relatively position other elements inside the hero */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* To make text more readable against background */
+  }
+  
+  /* Style for the hero title */
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for the hero description */
+  .hero p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Call to action button style */
+  .hero .cta-button {
+    background-color: #e74c3c; /* Adjust based on your branding color */
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* If you use an anchor tag for the CTA button */
+    display: inline-block; /* If you use an anchor tag for the CTA button */
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* If you want to add a gradient overlay over the hero image to darken it */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value to control the darkness */
+    z-index: -1; /* Places the overlay below the text and CTA */
+  }
+  
